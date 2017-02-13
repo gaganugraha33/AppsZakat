@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarStyle"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Harga beras/kg"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+                <EditText
+                    android:background="@drawable/background_spinner_white"
+                    android:id="@+id/et_Harga_beras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="number"
+                    android:layout_marginTop="8dp"
+                    android:maxLength="300"
+                    android:textColor="@color/primary_text_default_material_light"
+                    android:textSize="16sp"
+                    android:hint="Masukan harga beras (Rp)"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total anggota keluarga"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+                <EditText
+                    android:background="@drawable/background_spinner_white"
+                    android:id="@+id/et_Total_anggota_keluarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="number"
+                    android:layout_marginTop="8dp"
+                    android:maxLength="300"
+                    android:textColor="@color/primary_text_default_material_light"
+                    android:textSize="16sp"
+                    android:hint="Total Anggota Keluarga"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_title1_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zakat per anggota keluarga"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+                <EditText
+                    android:background="@drawable/background_spinner_gray"
+                    android:id="@+id/et_zakat_peranggota_keluarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="number"
+                    android:layout_marginTop="8dp"
+                    android:maxLength="300"
+                    android:textColor="@color/primary_text_default_material_light"
+                    android:textSize="16sp"
+                    android:hint="Rp.xxxx"
+                    android:focusable="false"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_title2_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total zakat yang dikeluarkan"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+                <EditText
+                    android:background="@drawable/background_spinner_gray"
+                    android:id="@+id/et_Total_zakat_yg_dikeluarkan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="number"
+                    android:layout_marginTop="8dp"
+                    android:maxLength="300"
+                    android:textColor="@color/primary_text_default_material_light"
+                    android:textSize="16sp"
+                    android:hint="Rp.xxxxx"
+                    android:focusable="false"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bt_hitung"
+                        android:gravity="center"
+                        android:background="@drawable/background_button_blue"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="Hitung"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/bt_reset"
+                        android:gravity="center"
+                        android:background="@drawable/background_button_red"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="Reset"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
