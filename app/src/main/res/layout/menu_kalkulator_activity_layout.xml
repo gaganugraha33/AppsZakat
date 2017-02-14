@@ -193,6 +193,7 @@
 
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cv_zakat_ternak"
                 android:foreground="@drawable/bg_transparent_view"
                 android:layout_marginTop="6dp"
                 android:layout_width="match_parent"

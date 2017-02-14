@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarStyle"
+        />
+
+  <LinearLayout
+      android:layout_margin="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Kambing/Domba : "
+          android:textSize="16sp"
+          android:textColor="@color/black"
+          />
+
+
+      <TextView
+          android:layout_marginTop="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Jika digembalakan selama 1 tahun dengan total : "
+          android:textSize="15sp"
+          android:textColor="@color/black"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_marginRight="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="-"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="40 - 120 ekor maka zakatnya 1 ekor betina"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_marginRight="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="-"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="121 - 200 ekor maka zakatnya 2 ekor kambing betina"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_marginRight="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="-"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="201 - 300 ekor maka zakatnya 3 ekor kambing betina"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_marginRight="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="-"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Lebih dari 300 maka setiap 100 ekor dikeluarkan 1 ekor kambing betina"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              />
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+<LinearLayout
+      android:layout_margin="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Sapi/Kerbau : "
+          android:textSize="16sp"
+          android:textColor="@color/black"
+          />
+
+
+      <TextView
+          android:layout_marginTop="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Jika digembalakan selama 1 tahun dengan total : "
+          android:textSize="15sp"
+          android:textColor="@color/black"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_marginRight="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="-"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="30 - 39 ekor sapi maka zakatnya 1 ekor sapi berumur 1 tahun"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_marginRight="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="-"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="40 - 59 ekor sapi maka zakatnya 1 ekor sapi bertina berumur 1 tahun"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_marginRight="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="-"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="60 - 69 ekor sapi maka zakatnya 2 ekor sapi berumur 1 tahun"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_marginRight="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="-"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="70 - 79 ekor sapi maka zakatnya 1 ekor sapi betina 2 tahun dan 1 ekor sapi berumur 1 tahun"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              />
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+
+</LinearLayout>

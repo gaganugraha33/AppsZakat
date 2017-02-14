@@ -21,6 +21,7 @@ public class MenuKalkulatorActivity extends AppCompatActivity {
     private CardView cvZakatFitrah;
     private CardView cvZakatEmas;
     private CardView cvZakatTabungan;
+    private CardView cvZakatTernak;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class MenuKalkulatorActivity extends AppCompatActivity {
         cvZakatFitrah = (CardView)findViewById(R.id.cv_zakat_fitrah);
         cvZakatEmas = (CardView)findViewById(R.id.cv_zakat_emas);
         cvZakatTabungan = (CardView)findViewById(R.id.cv_zakat_tabungan);
+        cvZakatTernak = (CardView)findViewById(R.id.cv_zakat_ternak);
 
         cvZakatFitrah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +57,14 @@ public class MenuKalkulatorActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuKalkulatorActivity.this, MenuZakatTabunganActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cvZakatTernak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuKalkulatorActivity.this, MenuZakatTernakActivity.class);
                 startActivity(intent);
             }
         });

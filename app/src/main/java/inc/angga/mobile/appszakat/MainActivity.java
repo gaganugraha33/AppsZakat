@@ -24,7 +24,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void cobaUpdate(){
-        int i = 2+2;
-    }
 }
