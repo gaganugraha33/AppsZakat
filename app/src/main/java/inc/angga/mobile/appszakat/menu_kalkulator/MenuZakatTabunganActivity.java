@@ -25,9 +25,9 @@ public class MenuZakatTabunganActivity extends AppCompatActivity {
     private EditText etTotalzakatygdikeluarkan;
     private TextView btHitung;
     private TextView btReset;
-    private Double nisabEmas;
+    private int nisabEmas;
     private Double totalKeseluruhanTabungan;
-    private Double totalZakatYgDiKeluarkan;
+    private int totalZakatYgDiKeluarkan;
     private Toolbar mToolBar;
 
 
@@ -56,18 +56,19 @@ public class MenuZakatTabunganActivity extends AppCompatActivity {
 
 
                 if (!etHargaemas.getText().toString().equals("")&&!etTabunganBank.getText().toString().equals("")&&!etTabunganKoperasi.getText().toString().equals("")){
-                    nisabEmas = Double.valueOf(etHargaemas.getText().toString())*85;
+                    nisabEmas = Integer.parseInt(etHargaemas.getText().toString())*85;
 
                     totalKeseluruhanTabungan = Double.valueOf(etTabunganBank.getText().toString())+Double.valueOf(etTabunganKoperasi.getText().toString());
 
-                    totalZakatYgDiKeluarkan = totalKeseluruhanTabungan*0.025;
+                    totalZakatYgDiKeluarkan = (int)(totalKeseluruhanTabungan*0.025);
 
                     etNisabEmas.setText(String.valueOf(nisabEmas));
-                    etTotalkeseluruhantabungan.setText(String.valueOf(totalKeseluruhanTabungan));
+                    int convertDataKeseluruhanTabungan = totalKeseluruhanTabungan.intValue();
+                    etTotalkeseluruhantabungan.setText(String.valueOf(convertDataKeseluruhanTabungan));
                     etTotalzakatygdikeluarkan.setText(String.valueOf(totalZakatYgDiKeluarkan));
 
                 }else {
-                    Toast.makeText(getApplicationContext(), "kosong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Maaf anda harus mengisi data secara keseluruhan", Toast.LENGTH_SHORT).show();
                 }
 
             }

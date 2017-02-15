@@ -25,9 +25,9 @@ public class MenuZakatFitrahActivity extends AppCompatActivity {
     private EditText etZakatPeranggotaKeluarga;
     private EditText etTotalzakatygdikeluarkan;
     private float hargaBeras=0;
-    private double totalAnggotaKeluarga=0;
-    private double totalZakatPeranggotaKeluarga=0;
-    private double totalZakatYgDikeluarkan=0;
+    private int totalAnggotaKeluarga=0;
+    private int totalZakatPeranggotaKeluarga=0;
+    private int totalZakatYgDikeluarkan=0;
     private TextView btHitung;
     private TextView btReset;
 
@@ -59,7 +59,7 @@ public class MenuZakatFitrahActivity extends AppCompatActivity {
                     hargaBeras = Integer.parseInt(etHargaberas.getText().toString());
                     totalAnggotaKeluarga = Integer.parseInt(etTotalAnggotaKeluarga.getText().toString());
 
-                    totalZakatPeranggotaKeluarga = (hargaBeras*2.5);
+                    totalZakatPeranggotaKeluarga =(int)(hargaBeras*2.5);
                     totalZakatYgDikeluarkan = totalZakatPeranggotaKeluarga*totalAnggotaKeluarga;
 
                     etZakatPeranggotaKeluarga.setText(String.valueOf(totalZakatPeranggotaKeluarga));

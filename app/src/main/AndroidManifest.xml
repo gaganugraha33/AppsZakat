@@ -48,6 +48,10 @@
         <activity android:name=".menu_kalkulator.MenuZakatTernakActivity"
             android:label="Zakat Ternak"
             />
+
+        <activity android:name=".menu_kalkulator.MenuZakatProfesiActivity"
+            android:label="Zakat Profesi"
+            />
     </application>
 
 </manifest>

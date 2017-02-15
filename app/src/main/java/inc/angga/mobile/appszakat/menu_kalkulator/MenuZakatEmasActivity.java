@@ -25,9 +25,9 @@ public class MenuZakatEmasActivity extends AppCompatActivity{
     private EditText etTotalZakatYgDikeluarkan;
     private TextView btHitung;
     private TextView btReset;
-    private Double nisabEmas;
-    private Double totalKeseluruhan;
-    private Double totalZakatYgHarusDikeluarkan;
+    private int nisabEmas;
+    private int totalKeseluruhan;
+    private int totalZakatYgHarusDikeluarkan;
     private Double total;
     private Toolbar mToolBar;
 
@@ -57,11 +57,11 @@ public class MenuZakatEmasActivity extends AppCompatActivity{
 
                 if (!etHargaEmas.getText().toString().equals("")&&!etEmasYgDimiliki.getText().toString().equals("")&&!etEmasYgDisimpan.getText().toString().equals("")){
 
-                    nisabEmas = Double.valueOf( etHargaEmas.getText().toString())*85;
-                    totalKeseluruhan = Double.valueOf(etEmasYgDimiliki.getText().toString())+Double.valueOf(etEmasYgDisimpan.getText().toString());
+                    nisabEmas = Integer.parseInt( etHargaEmas.getText().toString())*85;
+                    totalKeseluruhan = Integer.parseInt(etEmasYgDimiliki.getText().toString())+Integer.parseInt(etEmasYgDisimpan.getText().toString());
 
-                    total = Double.valueOf(etHargaEmas.getText().toString())*Double.valueOf(etEmasYgDisimpan.getText().toString());
-                    totalZakatYgHarusDikeluarkan = total*0.025;
+                    totalZakatYgHarusDikeluarkan =(int)((Double.valueOf(etHargaEmas.getText().toString())*Double.valueOf(etEmasYgDisimpan.getText().toString()))*0.025);
+//                    totalZakatYgHarusDikeluarkan = total*0.025;
 
                     etNisanEmas.setText(String.valueOf(nisabEmas));
                     etTotalKeseluruhanEmas.setText(String.valueOf(totalKeseluruhan));

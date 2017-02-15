@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarStyle"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga beras /kg"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_Harga_emas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Masukan Harga Beras (Rp)"
+                />
+
+            <TextView
+                android:id="@+id/tv_title1_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total nisab"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_gray"
+                android:id="@+id/et_total_nisab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pendapatan suami perbulan"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_pendapatan_suami_perbulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pendapatan istri perbulan"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_pendapatan_istri_perbulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pendapatan anak perbulan"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_pendapatan_anak_perbulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total pendapatan keluarga perbulan "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_gray"
+                android:id="@+id/et_total_pendapatan_keluarga_perbulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uang lembur kerja"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_uang_lembur_kerja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kerja sampingan"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_kerja_sampingan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+
+         <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bonus lainnya"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_bonus_lainnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pendapatan tambahan"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_gray"
+                android:id="@+id/et_pendapatan_tambahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biaya pendidikan anak 1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_biaya_pendidikan_anak_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biaya pendidikan anak 2"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_biaya_pendidikan_anak_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biaya pendidikan anak 3"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_biaya_pendidikan_anak_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cicilan barang"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_white"
+                android:id="@+id/et_cicilan_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total pengeluaran keluarga perbulan"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_gray"
+                android:id="@+id/et_total_pengeluaran_keluarga_perbulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total zakat"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:background="@drawable/background_spinner_gray"
+                android:id="@+id/et_total_zakat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:maxLength="300"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:hint="Rp.xxxx"
+                android:focusable="false"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bt_hitung"
+                    android:gravity="center"
+                    android:background="@drawable/background_button_blue"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="Hitung"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/bt_reset"
+                    android:gravity="center"
+                    android:background="@drawable/background_button_red"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="Reset"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
