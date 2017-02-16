@@ -28,6 +28,9 @@
         <activity android:name=".menu_definisi_zakat.MenuZakatActivity"
             android:label="Zakat"
             />
+        <activity android:name=".menu_kalkulator.MenuZakatProfesiActivity"
+            android:label="Zakat Profesi"
+            />
 
         <activity android:name=".menu_kalkulator.MenuKalkulatorActivity"
             android:label="Kalkulator"
