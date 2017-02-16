@@ -25,8 +25,8 @@
             android:label="home"
             />
 
-        <activity android:name=".MenuZakatActivity"
-            android:label="zakat"
+        <activity android:name=".menu_definisi_zakat.MenuZakatActivity"
+            android:label="Zakat"
             />
 
         <activity android:name=".menu_kalkulator.MenuKalkulatorActivity"
@@ -48,8 +48,11 @@
         <activity android:name=".menu_kalkulator.MenuZakatTernakActivity"
             android:label="Zakat Ternak"
             />
+        <activity android:name=".menu_definisi_zakat.DefinisiZakatFitrahActivity"
+            android:label="Zakat Fitrah"
+            />
 
-        <activity android:name=".menu_kalkulator.MenuZakatProfesiActivity"
+        <activity android:name=".menu_definisi_zakat.DefinisiZakatProfesiActivity"
             android:label="Zakat Profesi"
             />
     </application>

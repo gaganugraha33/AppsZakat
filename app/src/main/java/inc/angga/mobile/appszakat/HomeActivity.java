@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import inc.angga.mobile.appszakat.menu_definisi_zakat.MenuZakatActivity;
 import inc.angga.mobile.appszakat.menu_kalkulator.MenuKalkulatorActivity;
 
 /**

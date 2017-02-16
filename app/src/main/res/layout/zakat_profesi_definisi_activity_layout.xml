@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarStyle"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zakat__profesi"
+                android:id="@+id/imageView"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp">
+
+
+            <TextView
+                android:text="Zakat merupakan salah satu rukun Islam, dan menjadi salah satu unsur pokok bagi tegaknya syariat Islam. Oleh sebab itu hukum zakat adalah wajib (fardhu) atas setiap muslim yang telah memenuhi syarat-syarat tertentu. Zakat termasuk dalam kategori ibadah seperti salat, haji, dan puasa yang telah diatur secara rinci berdasarkan Alquran dan Sunah. Zakat juga merupakan sebuah kegiatan sosial kemasyarakatan dan kemanusiaan yang dapat berkembang sesuai dengan perkembangan umat manusia di mana pun."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
