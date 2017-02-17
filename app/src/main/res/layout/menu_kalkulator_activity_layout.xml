@@ -5,6 +5,13 @@
     android:background="@color/gray"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarStyle"
+        />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -236,14 +243,6 @@
 
 
     </ScrollView>
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/mainToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:theme="@style/ToolbarStyle"
-        />
 
 
 </LinearLayout>
