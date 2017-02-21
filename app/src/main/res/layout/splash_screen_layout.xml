@@ -11,13 +11,35 @@
         android:scaleType="fitXY"
         />
 
-    <ImageView
-        android:layout_marginTop="95dp"
-        android:padding="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/textsplashscreen"
-        />
+  <LinearLayout
+      android:layout_marginTop="120dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center">
+
+      <ImageView
+          android:layout_width="250dp"
+          android:layout_height="250dp"
+          android:src="@drawable/textsplashscreen"
+          />
+
+      <RelativeLayout
+          android:id="@+id/rl_progress_bar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp">
+
+          <ProgressBar
+              style="?android:attr/progressBarStyleLarge"
+              android:layout_width="wrap_content"
+              android:layout_gravity="center"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true" />
+      </RelativeLayout>
+
+
+  </LinearLayout>
 
 
 
