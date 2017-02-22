@@ -21,9 +21,6 @@
 
         <activity android:name=".MainActivity"
             android:label="main"/>
-        <activity android:name=".HomeActivity"
-            android:label="home"
-            />
 
         <activity android:name=".menu_definisi_zakat.MenuZakatActivity"
             android:label="Zakat"
