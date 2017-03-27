@@ -12,7 +12,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import inc.angga.mobile.appszakat.R;
+import inc.angga.mobile.appszakat.dalil_dan_hadis.DalilDanHadisActivity;
 import inc.angga.mobile.appszakat.menu_definisi_zakat.MenuZakatActivity;
+import inc.angga.mobile.appszakat.menu_info_lembaga_zakat.InfoLembagaZakat;
 import inc.angga.mobile.appszakat.menu_kalkulator.MenuKalkulatorActivity;
 
 /**
@@ -26,11 +28,11 @@ public class HomeFragment extends Fragment {
     private ImageView btInfoLembaga;
     private static Context mContext;
 
+
     public static HomeFragment newInstance(Context context){
         mContext = context;
         return new HomeFragment();
     }
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -51,6 +53,22 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, MenuKalkulatorActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btDalil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, DalilDanHadisActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btInfoLembaga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, InfoLembagaZakat.class);
                 startActivity(intent);
             }
         });

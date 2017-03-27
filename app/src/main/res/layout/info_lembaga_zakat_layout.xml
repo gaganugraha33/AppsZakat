@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarStyle"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Berikut lembaga amil zakat, infaq, shadaqah, wakah dan kemanusiaan yang beroperasi resmi di Indonesia : "/>
+
+
+            <TextView
+                android:id="@+id/tv_Baznas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Badan Amil Zakat Nasional (Baznas) – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_Bazis_DKI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="BAZIS DKI – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_Dompet_dhuafa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Dompet Dhuafa Republika – Jakarta "/>
+
+            <TextView
+                android:id="@+id/tv_PKPU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Pos Keadilan Peduli Umat (PKPU) – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_Portal_Infaq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Portal Infaq – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_Rumah_zakat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Rumah Zakat Indonesia – Bandung"/>
+
+            <TextView
+                android:id="@+id/tv_Rumah_DPU_DT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Dompet Peduli Ummat Daarut Tauhiid (DPU-DT) – Bandung"/>
+
+            <TextView
+                android:id="@+id/tv_BAZ_Jawa_Timur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="BAZ Jawa Timur – Surabaya "/>
+
+            <TextView
+                android:id="@+id/tv_YDSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Yayasan Dana Sosial Al Falah (YDSF) – Surabaya"/>
+
+            <TextView
+                android:id="@+id/tv_LAZ_Swadayah_Umah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="LAZ Swadaya Ummah – Riau"/>
+
+            <TextView
+                android:id="@+id/tv_LAZIS_NU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="LAZIS Nahdlatul Ulama – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_LAZIS_MU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="LAZIS Muhammadiyah – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_LAZ_Al_Azhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="LAZ Al-Azhar Peduli Ummat – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_BMH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Baitul Maal Hidayatullah (BMH) – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_BMM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Baitulmaal Muamalat (BMM) – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_BSM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="LAZNAS BSM Umat – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_Rumah_amal_salman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Rumah Amal Salman ITB – Bandung"/>
+
+            <TextView
+                android:id="@+id/tv_MER_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Medical Emergency Rescue Committee (MER-C) – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_Rumah_Yatim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Rumah Yatim – Bandung"/>
+
+            <TextView
+                android:id="@+id/tv_PPPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Program Pembibitan Penghafal Al Qur’an (PPPA Wisata Hati) – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_Bulan_sabit_merah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Bulan Sabit Merah Indonesia – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_KISPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Komite Indonesia untuk Solidaritas Palestina (KISPA) – Jakarta"/>
+
+            <TextView
+                android:id="@+id/tv_Barbeku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Yasmin Barang Bekas Berkualitas (Barbeku) – Jakarta"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
