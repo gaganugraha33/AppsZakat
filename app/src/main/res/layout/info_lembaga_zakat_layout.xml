@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="17sp"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:text="Berikut lembaga amil zakat, infaq, shadaqah, wakah dan kemanusiaan yang beroperasi resmi di Indonesia : "/>
@@ -282,7 +282,8 @@
                 android:background="@color/colorPrimary"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/white"
-                android:text="Yasmin Barang Bekas Berkualitas (Barbeku) – Jakarta"/>
+                android:text="Yasmin Barang Bekas Berkualitas (Barbeku) – Jakarta"
+                android:layout_marginBottom="15dp"/>
 
         </LinearLayout>
 

@@ -63,6 +63,9 @@
         <activity android:name=".menu_info_lembaga_zakat.InfoLembagaZakat"
             android:label="Info Lembaga Zakat"
             />
+        <activity android:name=".dalil_dan_hadis.DetailHaditsActivity"
+            android:label="Detail Hadits"
+            />
     </application>
 
 </manifest>

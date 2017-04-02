@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import inc.angga.mobile.appszakat.R;
-import inc.angga.mobile.appszakat.dalil_dan_hadis.DataDalil;
+import inc.angga.mobile.appszakat.dalil_dan_hadis.DataDalilHadits;
 import inc.angga.mobile.appszakat.dalil_dan_hadis.model.DalilField;
 
 /**
@@ -32,13 +32,13 @@ public class DalilAdapterDetail extends RecyclerView.Adapter<RecyclerView.ViewHo
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
         final DalilAdapterDetail.ViewHolder holder = (DalilAdapterDetail.ViewHolder) viewHolder;
-        holder.tvNoSurat.setText(DataDalil.getDetailSuratDalil(mPosition).get(position).get(DalilField.noDalil).toString());
-        holder.tvDetailSurat.setText(DataDalil.getDetailSuratDalil(mPosition).get(position).get(DalilField.DetailDalil).toString());
+        holder.tvNoSurat.setText(DataDalilHadits.getDetailSuratDalil(mPosition).get(position).get(DalilField.noDalil).toString());
+        holder.tvDetailSurat.setText(DataDalilHadits.getDetailSuratDalil(mPosition).get(position).get(DalilField.DetailDalil).toString());
     }
 
     @Override
     public int getItemCount() {
-        return DataDalil.getDetailSuratDalil(mPosition).size();
+        return DataDalilHadits.getDetailSuratDalil(mPosition).size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
