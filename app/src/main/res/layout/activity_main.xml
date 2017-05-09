@@ -8,12 +8,34 @@
     tools:context="inc.angga.mobile.appszakat.MainActivity">
 
     <LinearLayout
-        android:layout_marginTop="40dp"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:background="@color/transparent_black_90"
+            >
+
+            <TextView
+                android:id="@+id/tv_text_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:translationX="400dp"
+                android:textColor="@color/white"
+                android:text="Kontak yang bisa dihubungi : Ust. Asep Yusuh, No telp: 081224497026"
+                />
+
+
+        </RelativeLayout>
+
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Panduan Zakat"
@@ -30,7 +52,7 @@
             android:textSize="20sp"/>
 
        <LinearLayout
-           android:layout_marginTop="50dp"
+           android:layout_marginTop="20dp"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:gravity="center"
@@ -58,8 +80,9 @@
         >
 
         <ImageView
+
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/height_home_image"
             android:gravity="center"
             android:layout_marginBottom="5dp"
             android:src="@drawable/logo_stimik"/>

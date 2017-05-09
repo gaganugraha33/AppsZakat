@@ -17,23 +17,24 @@ import inc.angga.mobile.appszakat.R;
 
 public class MenuZakatActivity extends AppCompatActivity {
     private Toolbar mToolBar;
-    private CardView cardView1, cardView2, cardView3, cardView4, cardView5;
+    private CardView cvZakatFitrah, cvZakatProfesi, cvZakat, czZakatEmas, cvZakatTabungan, cvZakatTernak;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_zakat_activity_layout);
         mToolBar = (Toolbar) findViewById(R.id.mainToolbar);
-        cardView1 = (CardView) findViewById(R.id.cv_zakat_fitrah);
-        cardView2 = (CardView) findViewById(R.id.cv_zakat_profesi);
-//        cardView3 = (CardView) findViewById(R.id.cv_zakat_emas);
-//        cardView4 = (CardView) findViewById(R.id.cv_zakat_tabungan);
-//        cardView5 = (CardView) findViewById(R.id.cv_zakat_ternak);
+        cvZakatFitrah = (CardView) findViewById(R.id.cv_zakat_fitrah);
+        cvZakatProfesi = (CardView) findViewById(R.id.cv_zakat_profesi);
+        cvZakat = (CardView) findViewById(R.id.cv_zakat);
+        czZakatEmas = (CardView) findViewById(R.id.cv_zakat_emas);
+        cvZakatTabungan = (CardView) findViewById(R.id.cv_zakat_tabungan);
+        cvZakatTernak = (CardView) findViewById(R.id.cv_zakat_ternak);
 
         setSupportActionBar(mToolBar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        cardView1.setOnClickListener(new View.OnClickListener() {
+        cvZakatFitrah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuZakatActivity.this, DefinisiZakatFitrahActivity.class);
@@ -41,10 +42,41 @@ public class MenuZakatActivity extends AppCompatActivity {
             }
         });
 
-        cardView2.setOnClickListener(new View.OnClickListener() {
+        cvZakatProfesi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuZakatActivity.this, DefinisiZakatProfesiActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cvZakat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuZakatActivity.this, DefinisiZakatActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        czZakatEmas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuZakatActivity.this, DefinisiZakatEmasActivity.class);
+                startActivity(intent);
+            }
+        });
+        cvZakatTabungan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuZakatActivity.this, DefinisiZakatTabunganActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cvZakatTernak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuZakatActivity.this, DefinisiZakatTernakActivity.class);
                 startActivity(intent);
             }
         });

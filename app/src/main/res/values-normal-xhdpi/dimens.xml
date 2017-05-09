@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 4.7 - 6 inch. -->
+    <dimen name="size_height_icon_home">130dp</dimen>
+    <dimen name="size_text_home_icon">20sp</dimen>
+    <dimen name="height_home_image">50dp</dimen>
+    <integer name="slide_text_animate">-1100</integer>
+</resources>

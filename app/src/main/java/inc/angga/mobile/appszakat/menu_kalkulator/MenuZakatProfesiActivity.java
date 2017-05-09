@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import inc.angga.mobile.appszakat.R;
 
@@ -96,6 +97,9 @@ public class MenuZakatProfesiActivity extends AppCompatActivity {
                     totalZakat = (totalPendapatanKeluargaPerbulan-totalPendapatanTambahan-totalPengeluaranKeluargaPerbulan)*0.025;
                     int convertZakat = (int) totalZakat;
                     etTotalZakat.setText(String.valueOf(convertZakat));
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "Maaf anda harus mengisi data secara keseluruhan", Toast.LENGTH_SHORT).show();
                 }
 
             }

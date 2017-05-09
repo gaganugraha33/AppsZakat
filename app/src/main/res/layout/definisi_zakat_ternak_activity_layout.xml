@@ -26,7 +26,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:src="@drawable/zakat__profesi"
+                android:src="@drawable/zakat_ternak"
                 android:scaleType="centerCrop"
                 android:layout_marginBottom="10dp"
                 />
@@ -38,16 +38,15 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/tv_definisi_zakat_profesi"
+                    android:id="@+id/tv_definisi_zakat_ternak"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
                     android:text="test test"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="match_parent"

@@ -68,7 +68,7 @@ public class MenuZakatFitrahActivity extends AppCompatActivity {
                     Log.d("Cekkk","total Zakat peranggota Keluarga "+totalZakatPeranggotaKeluarga+" total zakat yg dikeluarkan "+totalZakatYgDikeluarkan );
 
                 }else {
-                    Toast.makeText(getApplicationContext(), "Mohon untuk mengisi harga beras dan total anggota keluarga", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Maaf anda harus mengisi data secara keseluruhan", Toast.LENGTH_SHORT).show();
                 }
 
 

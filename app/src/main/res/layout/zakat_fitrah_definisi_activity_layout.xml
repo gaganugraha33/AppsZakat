@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    >
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/mainToolbar"
@@ -14,48 +13,54 @@
         app:theme="@style/ToolbarStyle"
         />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:orientation="vertical"
+
             android:layout_width="match_parent"
+            android:orientation="vertical"
             android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="150dp"
                 android:src="@drawable/zakat_fitrah"
-                android:id="@+id/imageView"
-                android:layout_marginTop="5dp"
-                android:scaleType="fitXY"/>
-        </LinearLayout>
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="10dp"
+                />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp">
-
-
-            <TextView
-                android:text="Zakat merupakan salah satu rukun Islam, dan menjadi salah satu unsur pokok bagi tegaknya syariat Islam. Oleh sebab itu hukum zakat adalah wajib (fardhu) atas setiap muslim yang telah memenuhi syarat-syarat tertentu. Zakat termasuk dalam kategori ibadah seperti salat, haji, dan puasa yang telah diatur secara rinci berdasarkan Alquran dan Sunah. Zakat juga merupakan sebuah kegiatan sosial kemasyarakatan dan kemanusiaan yang dapat berkembang sesuai dengan perkembangan umat manusia di mana pun."
+            <LinearLayout
+                android:layout_margin="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:layout_marginBottom="16dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="3dp"
-                android:textSize="15dp"/>
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv_definisi_zakat_fitrah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="test test"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+
+            </LinearLayout>
 
         </LinearLayout>
-    </LinearLayout>
+
+
+    </ScrollView>
+
 
 
 </LinearLayout>

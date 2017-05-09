@@ -66,6 +66,19 @@
         <activity android:name=".dalil_dan_hadis.DetailHaditsActivity"
             android:label="Detail Hadits"
             />
+
+        <activity android:name=".menu_definisi_zakat.DefinisiZakatActivity"
+            android:label="Definisi Zakat"
+            />
+        <activity android:name=".menu_definisi_zakat.DefinisiZakatEmasActivity"
+            android:label="Zakat Emas"
+            />
+        <activity android:name=".menu_definisi_zakat.DefinisiZakatTabunganActivity"
+            android:label="Zakat Tabungan"
+            />
+        <activity android:name=".menu_definisi_zakat.DefinisiZakatTernakActivity"
+            android:label="Zakat Ternak"
+            />
     </application>
 
 </manifest>

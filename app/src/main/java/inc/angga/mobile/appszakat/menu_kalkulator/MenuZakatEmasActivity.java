@@ -69,7 +69,7 @@ public class MenuZakatEmasActivity extends AppCompatActivity{
 
                 }else {
 
-                    Toast.makeText(getApplicationContext(),"kosong",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Maaf anda harus mengisi data secara keseluruhan", Toast.LENGTH_SHORT).show();
 
                 }
 
